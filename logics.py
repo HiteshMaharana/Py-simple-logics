@@ -38,5 +38,14 @@
 # converter(2)       --------> using function
 
 
+#------------ even , odd using function --------
+# n = int(input("Enter a number: "))
+
+# def cal_num(num):
+#     if num %2==0:
+#         print(num,"is even")
+#     else:
+#         print(num,"is odd")
+# cal_num(n)
 
 
