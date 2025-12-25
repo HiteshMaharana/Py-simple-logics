@@ -49,3 +49,51 @@
 # cal_num(n)
 
 
+#---------------------------------- Student name and mark ( constructor , method and staticmethod ) ------------------------
+
+
+# class Student():
+#     def __init__(self,name,marks):
+#         self.name = name
+#         self.marks = marks
+
+#     @staticmethod
+#     def hello():
+#         print("Hello Student")
+
+#     def get_avg(self):
+#         sum = 0 
+#         for val in self.marks:
+#             sum += val
+#         print("HI", self.name , "your avarage marks is :", sum/len(self.marks))    
+
+# s1 = Student("Raju",[80,98,88,92])
+# s1.get_avg()
+# s1.hello()  
+
+
+#--------------------------------------- Bank account , debit and  credit ( constructor & method ) -----------------------------
+
+# class Bank:
+#     def __init__(self,bal,acc):
+#         self.balance = bal
+#         self.account_no = acc
+    
+#     #Debit Method
+#     def debit(self,amount):
+#         self.balance -= amount
+#         print("Your amount", amount , "has debited.")
+#         print("Total balance is :",self.get_balance())
+
+#     #Credit Method
+#     def credit(self,amount):
+#         self.balance += amount
+#         print("Your amount", amount , "has credited.")
+#         print("Total balance is :",self.get_balance())
+
+#     def get_balance(self):
+#         return self.balance
+
+# acc1 = Bank(1000,"SBI95723")
+# acc1.debit(100)
+# acc1.credit(50)
