@@ -97,3 +97,82 @@
 # acc1 = Bank(1000,"SBI95723")
 # acc1.debit(100)
 # acc1.credit(50)
+
+
+
+
+#--------------------------- Area and Perimeter -----------------
+# class Circle:
+#     def __init__(self,radius):
+#         self.radius = radius
+    
+#     def area(self):
+#         return (22/7) * self.radius ** 2 #PI * r^2 
+    
+#     def perimeter(self):
+#         return 2 * (22/7) * self.radius #2 * PI * r
+    
+
+
+# c1 = Circle(21)
+# print("Area =", c1.area())
+# print("Perimeter = ", c1.perimeter())
+
+
+#---------------------- Define employe class with attribute role , department , slary its have the showDetails() method -------------
+
+# class Employee:
+#     def __init__(self, role , dept , salary):
+#         self.role = role
+#         self.dept = dept
+#         self.salary = salary
+    
+#     def showDetails(self):
+#         print("Role =",self.role)
+#         print("Department = ",self.dept)
+#         print("Salary =",self.salary)
+
+# e1 = Employee("accountatant","Finance","60,000")
+# e1.showDetails()       
+
+
+#----- after this complete you just add on this , Create Engineer class that inherits properties from Employee & has addditional attributes : name & age ------
+
+# class Employee:
+#     def __init__(self, role , dept , salary):
+#         self.role = role
+#         self.dept = dept
+#         self.salary = salary
+    
+#     def showDetails(self):
+#         print("Role =",self.role)
+#         print("Department = ",self.dept)
+#         print("Salary =",self.salary)
+
+# class Engineer(Employee):
+#     def __init__(self,name,age):
+#         self.name = name
+#         self.age = age 
+#         super().__init__("Engineer","IT","75,000")
+
+
+# en1 = Engineer("Elun Musk",40)
+# en1.showDetails()
+
+
+#----------------------------- Create class Order which stores items & its price , use Dunder dunction __gt__() to convey that: order1 > order2 .......
+#if price of order1> price of order2
+
+# class Order:
+#     def __init__(self,item , price):
+#         self.item = item
+#         self.price = price
+
+#     def __gt__(self,ord2):
+#         return self.price > ord2.price
+
+# ord1 = Order("chips =",20)
+# ord2 = Order("tea =",10)
+# print(ord1 > ord2) #true
+
+
