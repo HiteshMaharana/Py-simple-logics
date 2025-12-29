@@ -175,4 +175,29 @@
 # ord2 = Order("tea =",10)
 # print(ord1 > ord2) #true
 
+#-------------------------------- Random password ganerate --------------------------------------------------
+
+import random
+import string
+
+# print(string.ascii_letters)  # Prints all ASCII letters (uppercase and lowercase)
+# #ASCII full form - American Standard Code for Information Interchange
+
+# print(string.digits)         # Prints all digit characters (0-9)
+# print(string.punctuation)    # Prints all punctuation characters
+
+
+pass_len = 12
+charValues = string.ascii_letters + string.digits + string.punctuation 
+
+# password = ""
+# for i in range(pass_len):
+#     password += random.choice(charValues)
+
+# print("Your random password: ", password)
+
+#List comprehension method [function for i in range (n)]
+res ="".join([random.choice(charValues) for i in range(pass_len)]) #on (" ") empty space we are joining all the characters
+print(res)
+
 
